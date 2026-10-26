@@ -1,0 +1,26 @@
+name: pdks_flutter
+description: "Atlas PDKS mobil uygulamasının Flutter versiyonu (giriş, kayıt ve çıkış)."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Backend'e HTTP istekleri (React Native'deki fetch karşılığı)
+  http: ^1.2.2
+  # JWT token'ı güvenli saklamak için (expo-secure-store karşılığı)
+  flutter_secure_storage: ^9.2.2
+  # Uygulama genelinde oturum durumu (React Context karşılığı)
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
